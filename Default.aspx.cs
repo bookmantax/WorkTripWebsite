@@ -111,7 +111,7 @@ public partial class _Default : System.Web.UI.Page
                         }
                         else//login
                         {
-                            t = (from u in db.Users where u.FacebookId == user.FacebookId select u).FirstOrDefault();
+                            t = (from u in db.Users where u.FacebookId == fUser.id select u).FirstOrDefault();
                             if (t != null)
                             {
                                 UserId = t.Id;
