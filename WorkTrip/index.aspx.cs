@@ -55,11 +55,11 @@ public partial class index : System.Web.UI.Page
     [WebMethod]
     public static string SendSms(string FirstName, string LastName, int phone1, int phone2, int phone3)
     {
-        using (TestEntities db = new TestEntities())
+        using (WorkTripEntities db = new WorkTripEntities())
         {
             db.Database.Connection.Open();
             string phone = (phone1.ToString() + phone2.ToString() + phone3.ToString());
-            Test t = (from u in db.Tests where u.FirstName == FirstName && u.LastName == LastName && u.Phone == phone select u).FirstOrDefault();
+            User t = (from u in db.Users where u.FirstName == FirstName && u.LastName == LastName && u.Phone == phone select u).FirstOrDefault();
             if (t != null)
             {
                 db.Database.Connection.Close();
@@ -68,14 +68,14 @@ public partial class index : System.Web.UI.Page
             else
             {
                 string verify = CreateVerificationCode();
-                t = new Test();
+                t = new User();
                 t.FirstName = FirstName;
                 t.LastName = LastName;
                 t.Phone = phone1.ToString() + phone2.ToString() + phone3.ToString();
                 t.VerificationCode = verify;
                 t.EmailAddress = "blank";
                 t.Password = "changeme";
-                db.Tests.Add(t);
+                db.Users.Add(t);
                 db.SaveChanges();
                 SignUpId = t.Id;
                 // instantiate a new Twilio Rest Client
@@ -106,11 +106,11 @@ public partial class index : System.Web.UI.Page
     [WebMethod]
     public static string CheckDuplicate(string FirstName, string LastName, int phone1, int phone2, int phone3)
     {
-        using (TestEntities db = new TestEntities())
+        using (WorkTripEntities db = new WorkTripEntities())
         {
             db.Database.Connection.Open();
             string phone = (phone1.ToString() + phone2.ToString() + phone3.ToString());
-            Test t = (from u in db.Tests where u.FirstName == FirstName && u.LastName == LastName && u.Phone == phone select u).FirstOrDefault();
+            User t = (from u in db.Users where u.FirstName == FirstName && u.LastName == LastName && u.Phone == phone select u).FirstOrDefault();
             if (t != null)
             {
                 db.Database.Connection.Close();
@@ -127,10 +127,10 @@ public partial class index : System.Web.UI.Page
     [WebMethod]
     public static string VerifyHuman(string code, string firstName, string lastName)
     {
-        using (TestEntities db = new TestEntities())
+        using (WorkTripEntities db = new WorkTripEntities())
         {
             db.Database.Connection.Open();
-            Test t = (from u in db.Tests where u.FirstName == firstName && u.LastName == lastName && u.VerificationCode == code select u).FirstOrDefault();
+            User t = (from u in db.Users where u.FirstName == firstName && u.LastName == lastName && u.VerificationCode == code select u).FirstOrDefault();
             if (t != null)
             {
                 t.Verified = true;
@@ -146,10 +146,10 @@ public partial class index : System.Web.UI.Page
     [WebMethod]
     public static string CreateLogin(string FirstName, string LastName, string code, string email, string password)
     {
-        using (TestEntities db = new TestEntities())
+        using (WorkTripEntities db = new WorkTripEntities())
         {
             db.Database.Connection.Open();
-            Test t = (from u in db.Tests where u.FirstName == FirstName && u.LastName == LastName && u.VerificationCode == code select u).FirstOrDefault();
+            User t = (from u in db.Users where u.FirstName == FirstName && u.LastName == LastName && u.VerificationCode == code select u).FirstOrDefault();
             if (t != null)
             {
                 t.EmailAddress = email;
@@ -167,10 +167,10 @@ public partial class index : System.Web.UI.Page
     [WebMethod]
     public static string Login(string email, string password)
     {
-        using (TestEntities db = new TestEntities())
+        using (WorkTripEntities db = new WorkTripEntities())
         {
             db.Database.Connection.Open();
-            Test t = (from u in db.Tests where u.EmailAddress == email && u.Password == password select u).FirstOrDefault();
+            User t = (from u in db.Users where u.EmailAddress == email && u.Password == password select u).FirstOrDefault();
             if (t != null)
             {
                 UserId = t.Id;

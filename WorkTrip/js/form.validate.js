@@ -171,6 +171,8 @@ $(document).ready(function () {
 		return false;
 	});
 
+
+
 	function showError(message) {
 		// body...
 		var errorDiv = errorStructStart + message + errorStructEnd;

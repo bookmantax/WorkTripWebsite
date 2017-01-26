@@ -1,0 +1,12 @@
+google api for no results. (get Lat/Long every time we select a place)
+
+https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=40.026784,%20-105.251534&radius=500&type=restaurant&key=AIzaSyDLrnBfy2K6qOfbey7F6NOGmo7Hq18PcYc
+
+
+<ProgressBar
+        android:id="@+id/signupProgressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>

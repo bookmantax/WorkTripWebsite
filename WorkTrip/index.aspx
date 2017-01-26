@@ -497,7 +497,7 @@
                   <!-- <h5  style="color: #152D58; margin-bottom:5px;padding: 5px 0px;" id="whyInfo" >Why?</h5> -->
                   <button id="loginFacebookButton" style="margin-top:10px; margin-bottom: 20px;  color: #fff;" class="btn btn-default text-center fb-button" > f | Login with Facebook </button>
                    <input type="hidden" name="client_id" value="975815735895755" />
-                   <input type="hidden" name="redirect_uri" value="http://localhost:50082/Default.aspx" />
+                   <input type="hidden" name="redirect_uri" value="http://localhost:60333/Default.aspx" />
                    <input type="hidden" name="response_type" value="code" />
                    <input type="hidden" name="state" value="1" />
                   <p class="subtitle fancy"><span>Or</span></p>

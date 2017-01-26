@@ -296,7 +296,7 @@
              <span>1. How many days were you in training and away from home for Delta?</span>
              <div class="input-group">
              <span class="input-group-addon">#</span>
-              <input placeholder="Value" type="text" class="form-control" name="info">
+              <input id="question1" placeholder="Value" type="text" class="form-control" name="info">
               <button class="btn btn-primary">
                   <span class="glyphicon glyphicon-edit"></span>
               </button>
@@ -307,7 +307,7 @@
              <div class="input-group">
               
               <span class="input-group-addon">$</span>
-              <input placeholder="Value" type="text" class="form-control" name="info">
+              <input id="question2" placeholder="Value" type="text" class="form-control" name="info">
               <button class="btn btn-primary">
                   <span class="glyphicon glyphicon-edit"></span>
               </button>
@@ -318,7 +318,7 @@
              <div class="input-group">
               
               <span class="input-group-addon">$</span>
-              <input placeholder="Value" type="text" class="form-control" name="info">
+              <input id="question3" placeholder="Value" type="text" class="form-control" name="info">
               <button class="btn btn-primary">
                   <span class="glyphicon glyphicon-edit"></span>
               </button>
@@ -329,7 +329,7 @@
              <div class="input-group">
               
               <span class="input-group-addon">$</span>
-              <input placeholder="Value" type="text" class="form-control" name="info">
+              <input id="question4" placeholder="Value" type="text" class="form-control" name="info">
               <button class="btn btn-primary">
                   <span class="glyphicon glyphicon-edit"></span>
               </button>
@@ -340,7 +340,7 @@
              <div class="input-group">
               
               <span class="input-group-addon">$</span>
-              <input placeholder="Value" type="text" class="form-control" name="info">
+              <input id="question5" placeholder="Value" type="text" class="form-control" name="info">
               <button class="btn btn-primary">
                   <span class="glyphicon glyphicon-edit"></span>
               </button>
@@ -351,7 +351,7 @@
              <div class="input-group">
               
               <span class="input-group-addon">$</span>
-              <input placeholder="Value" type="text" class="form-control" name="info">
+              <input id="question6" placeholder="Value" type="text" class="form-control" name="info">
               <button class="btn btn-primary">
                   <span class="glyphicon glyphicon-edit"></span>
               </button>
@@ -362,7 +362,7 @@
              <div class="input-group">
               
               <span class="input-group-addon">$</span>
-              <input placeholder="Value" type="text" class="form-control" name="info">
+              <input id="question7" placeholder="Value" type="text" class="form-control" name="info">
               <button class="btn btn-primary">
                   <span class="glyphicon glyphicon-edit"></span>
               </button>
@@ -373,7 +373,7 @@
              <div class="input-group">
               
               <span class="input-group-addon">$</span>
-              <input placeholder="Value" type="text" class="form-control" name="info">
+              <input id="question8" placeholder="Value" type="text" class="form-control" name="info">
               <button class="btn btn-primary">
                   <span class="glyphicon glyphicon-edit"></span>
               </button>
@@ -384,7 +384,7 @@
              <div class="input-group">
               
               <span class="input-group-addon">$</span>
-              <input placeholder="Value" type="text" class="form-control" name="info">
+              <input id="question9" placeholder="Value" type="text" class="form-control" name="info">
               <button class="btn btn-primary">
                   <span class="glyphicon glyphicon-edit"></span>
               </button>
@@ -395,7 +395,7 @@
              <div class="input-group">
               
               <span class="input-group-addon">$</span>
-              <input placeholder="Value" type="text" class="form-control" name="info">
+              <input id="question10" placeholder="Value" type="text" class="form-control" name="info">
               <button class="btn btn-primary">
                   <span class="glyphicon glyphicon-edit"></span>
               </button>
@@ -406,7 +406,7 @@
              <div class="input-group">
               
               <span class="input-group-addon">$</span>
-              <input placeholder="Value" type="text" class="form-control" name="info">
+              <input id="question11" placeholder="Value" type="text" class="form-control" name="info">
               <button class="btn btn-primary">
                   <span class="glyphicon glyphicon-edit"></span>
               </button>
@@ -417,7 +417,7 @@
              <div class="input-group">
              
                <span class="input-group-addon">$</span>
-              <input placeholder="Value" type="text" class="form-control" name="info">
+              <input id="question12" placeholder="Value" type="text" class="form-control" name="info">
               <button class="btn btn-primary ">
                   <span class="glyphicon glyphicon-edit"></span>
               </button>
@@ -427,7 +427,7 @@
 
         <div class="submit-button col-md-2  col-md-offset-8">
 
-  <input type="submit" class="btn btn-primary" value="submit"  />
+  <input id="taxQuestionSubmitButton" type="submit" class="btn btn-primary" value="submit"  />
 
         </div>
         </form>
@@ -443,7 +443,7 @@
 <div class="field col-lg-offset-3 col-md-offset-3 col-lg-6 col-md-6 col-sm-12 col-xs-12" >
              <span>First Name</span>
              <div class="input-group">
-              <input placeholder="First Name" type="text" class="form-control" name="info">
+              <input id="messageFirstName" placeholder="First Name" type="text" class="form-control" name="info">
               <button class="btn btn-primary">
                   <span class="glyphicon glyphicon-edit"></span>
               </button>
@@ -454,7 +454,7 @@
              <div class="input-group">
               
               
-              <input placeholder="Last Name" type="text" class="form-control" name="info">
+              <input id="messageLastName" placeholder="Last Name" type="text" class="form-control" name="info">
               <button class="btn btn-primary">
                   <span class="glyphicon glyphicon-edit"></span>
               </button>
@@ -463,7 +463,7 @@
       <div class="field col-lg-offset-3 col-md-offset-3 col-lg-6 col-md-6 col-sm-12 col-xs-12" >
              <span>Email</span>
              <div class="input-group">
-              <input placeholder="Email" type="text" class="form-control" name="info">
+              <input id="messageEmail" placeholder="Email" type="text" class="form-control" name="info">
               <button class="btn btn-primary">
                   <span class="glyphicon glyphicon-edit"></span>
               </button>
@@ -472,7 +472,7 @@
             <div class="field col-lg-offset-3 col-md-offset-3 col-lg-6 col-md-6 col-sm-12 col-xs-12" >
              <span>Phone</span>
              <div class="input-group">
-              <input placeholder="Phone" type="text" class="form-control" name="info">
+              <input id="messagePhone" placeholder="Phone" type="text" class="form-control" name="info">
               <button class="btn btn-primary">
                   <span class="glyphicon glyphicon-edit"></span>
               </button>
@@ -481,7 +481,7 @@
 <div class="field col-lg-offset-3 col-md-offset-3 col-lg-6 col-md-6 col-sm-12 col-xs-12" >
              <span>Message</span>
              <div class="input-group">
-              <textarea placeholder="Message" type="text" rows="4" class="form-control" name="info"> </textarea>
+              <textarea id="messageMessage" placeholder="Message" type="text" rows="4" class="form-control" name="info"> </textarea>
               <button class="btn btn-primary">
                   <span class="glyphicon glyphicon-edit"></span>
               </button>
@@ -490,7 +490,7 @@
 
              <div class="submit-button col-md-2  col-md-offset-8">
 
-  <input type="submit" class="btn btn-primary" value="submit"  />
+  <input id="sendMessageSubmitButton" type="submit" class="btn btn-primary" value="submit"  />
 
         </div>
         
@@ -543,21 +543,21 @@
   <div class="col-lg-offset-3 col-md-offset-3 col-lg-6 col-md-6 col-sm-12 col-xs-12" >
   <div class="field input-group">
     <span>First Name</span><br>
-    <input type="text" class=" col-10 form-control" name="firstName"><button class="btn btn-primary">
+    <input id="personalInfoFirstName" type="text" class=" col-10 form-control" name="firstName"><button class="btn btn-primary">
         <span class="glyphicon glyphicon-edit"></span>
         
     </button>
   </div>
   <div class="field input-group">
     <span>Middle Name</span><br>
-    <input type="text" class="form-control" name="firstName"><button class="btn btn-primary">
+    <input id="personalInfoMiddleName" type="text" class="form-control" name="firstName"><button class="btn btn-primary">
         <span class="glyphicon glyphicon-edit"></span>
         
     </button>
   </div>
   <div class="field input-group">
     <span>Last Name</span><br>
-    <input type="text" class="form-control" name="lastName">
+    <input id="personalInfoLastName" type="text" class="form-control" name="lastName">
     <button class="btn btn-primary">
         <span class="glyphicon glyphicon-edit"></span>
         
@@ -565,7 +565,7 @@
   </div>
   <div class="field input-group">
     <span>Base Airport 1st Day of 2016</span><br>
-    <input type="text" class="form-control" name="info">
+    <input id="personalInfoAirport" type="text" class="form-control" name="info">
     <button class="btn btn-primary">
         <span class="glyphicon glyphicon-edit"></span>
         
@@ -574,7 +574,7 @@
   
   <div class="field input-group">
     <span>Email</span><br>
-    <input type="text" class="form-control" name="info">
+    <input id="personalInfoEmail" type="text" class="form-control" name="info">
     <button class="btn btn-primary">
         <span class="glyphicon glyphicon-edit"></span>
         
@@ -582,7 +582,7 @@
   </div>
   <div class="field input-group">
     <span>Phone Number</span><br>
-    <input type="text" class="form-control" name="info">
+    <input id="personalInfoPhone" type="text" class="form-control" name="info">
     <button class="btn btn-primary">
         <span class="glyphicon glyphicon-edit"></span>
         
@@ -590,7 +590,7 @@
   </div>
   <div class="field input-group">
     <span>Date of Birth</span><br>
-    <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
+    <input id="personalInfoDateOfBirth" class="form-control" type="date" value="2011-08-19" id="example-date-input">
     <button class="btn btn-primary">
         <span class="glyphicon glyphicon-edit"></span>
         
@@ -598,7 +598,7 @@
   </div>
   <div class="field input-group">
     <span>Current Tax Address: Street, City, State, Zip Code</span><br>
-    <input type="text" class="form-control" name="airport">
+    <input id="personalInfoAddress" type="text" class="form-control" name="airport">
     <button class="btn btn-primary">
         <span class="glyphicon glyphicon-edit"></span>
         
@@ -610,7 +610,7 @@
   
      <div class="submit-button col-md-2  col-md-offset-8">
 
-  <input type="submit" class="btn btn-primary" value="submit"  />
+  <input id="personalInfoSubmitButton" type="submit" class="btn btn-primary" value="submit"  />
 
         </div>
         
@@ -641,22 +641,22 @@ You Worked as a Flight Attendant</h4>
           <form action="" method="post" enctype="multipart/form-data" id="js-upload-form-work">
             <div class="form-inline">
               <div class="form-group">
-                <input type="file" name="files[]" id="js-upload-files" multiple accept=".csv">
+                <!--<input type="file" name="files[]" id="js-upload-files" multiple accept=".csv">-->
               </div>
-              <button type="submit" class="btn btn-sm btn-primary" id="js-upload-submit">Upload files</button>
+              <!--<button type="submit" class="btn btn-sm btn-primary" id="js-upload-submit">Upload files</button>-->
             </div>
           </form>
 
-          <!-- Progress Bar -->
+          <!-- Progress Bar 
           <div class="progress">
             <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
               <span class="sr-only">60% Complete</span>
             </div>
-          </div>
+          </div>-->
 
           <!-- Upload Finished -->
           <div class="js-upload-finished">
-            <h3>Processed file</h3>
+            <h3>Processed files:</h3>
             <div class="list-group">
               
             </div>
@@ -689,22 +689,22 @@ You Worked as a Flight Attendant</h4>
           <form action="" method="post" enctype="multipart/form-data" id="js-upload-form">
             <div class="form-inline">
               <div class="form-group">
-                <input type="file" name="files[]" id="js-upload-files" multiple accept=".csv">
+                <!--<input type="file" name="files[]" id="js-upload-files" multiple accept="image/*, .doc, .txt"> -->
               </div>
-              <button type="submit" class="btn btn-sm btn-primary" id="js-upload-submit">Upload files</button>
+              <!-- <button type="submit" class="btn btn-sm btn-primary" id="js-upload-submit">Upload files</button> -->
             </div>
           </form>
 
-          <!-- Progress Bar -->
+          <!-- Progress Bar
           <div class="progress">
             <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
               <span class="sr-only" style="color: white;">60% Complete</span>
             </div>
-          </div>
+          </div> -->
 
           <!-- Upload Finished -->
           <div class="js-upload-finished">
-            <h3>Processed file</h3>
+            <h3>Processed files:</h3>
             <div class="list-group">
               
             </div>
@@ -753,11 +753,184 @@ You Worked as a Flight Attendant</h4>
 
 
 <script type="text/javascript">
-	
-	$(document).ready(function(){
+	//Fill data
+    $(document).ready(function () {
+        $.ajax({
+            type: "POST", // Can be GET or POST
+            url: "Default.aspx/GetFirstName", // Call the function TestAction in DataController.cs
+            contentType: "application/json; charset=utf-8",
+            success: function (reponse) { // data that we get back from the server
+                if (reponse.d != "Fail") {
+                    $("#personalInfoFirstName").val(reponse.d);
+                }
+                else {
+                    
+                }
+            },
+            error: function (response) { // in case of exception from server
+            },
+            complete: function (response) { // to be run after success and error (kinda like finally cause in a throw-catch-finally)
+            }
+        });
+
+            $.ajax({
+                type: "POST", // Can be GET or POST
+                url: "Default.aspx/GetMiddleName", // Call the function TestAction in DataController.cs
+                contentType: "application/json; charset=utf-8",
+                success: function (reponse) { // data that we get back from the server
+                    if (reponse.d != "Fail") {
+                        $("#personalInfoMiddleName").val(reponse.d);
+                    }
+                    else {
+                    
+                    }
+                },
+                error: function (response) { // in case of exception from server
+                },
+                complete: function (response) { // to be run after success and error (kinda like finally cause in a throw-catch-finally)
+                }
+            });
+
+            $.ajax({
+                type: "POST", // Can be GET or POST
+                url: "Default.aspx/GetLastName", // Call the function TestAction in DataController.cs
+                contentType: "application/json; charset=utf-8",
+                success: function (reponse) { // data that we get back from the server
+                    if (reponse.d != "Fail") {
+                        $("#personalInfoLastName").val(reponse.d);
+                    }
+                    else {
+
+                    }
+                },
+                error: function (response) { // in case of exception from server
+                },
+                complete: function (response) { // to be run after success and error (kinda like finally cause in a throw-catch-finally)
+                }
+            });
+
+            $.ajax({
+                type: "POST", // Can be GET or POST
+                url: "Default.aspx/GetAirport", // Call the function TestAction in DataController.cs
+                contentType: "application/json; charset=utf-8",
+                success: function (reponse) { // data that we get back from the server
+                    if (reponse.d != "Fail") {
+                        $("#personalInfoAirport").val(reponse.d);
+                    }
+                    else {
+
+                    }
+                },
+                error: function (response) { // in case of exception from server
+                },
+                complete: function (response) { // to be run after success and error (kinda like finally cause in a throw-catch-finally)
+                }
+            });
+
+            $.ajax({
+                type: "POST", // Can be GET or POST
+                url: "Default.aspx/GetEmail", // Call the function TestAction in DataController.cs
+                contentType: "application/json; charset=utf-8",
+                success: function (reponse) { // data that we get back from the server
+                    if (reponse.d != "Fail") {
+                        $("#personalInfoEmail").val(reponse.d);
+                    }
+                    else {
+
+                    }
+                },
+                error: function (response) { // in case of exception from server
+                },
+                complete: function (response) { // to be run after success and error (kinda like finally cause in a throw-catch-finally)
+                }
+            });
+
+            $.ajax({
+                type: "POST", // Can be GET or POST
+                url: "Default.aspx/GetPhone", // Call the function TestAction in DataController.cs
+                contentType: "application/json; charset=utf-8",
+                success: function (reponse) { // data that we get back from the server
+                    if (reponse.d != "Fail") {
+                        $("#personalInfoPhone").val(reponse.d);
+                    }
+                    else {
+
+                    }
+                },
+                error: function (response) { // in case of exception from server
+                },
+                complete: function (response) { // to be run after success and error (kinda like finally cause in a throw-catch-finally)
+                }
+            });
+
+            $.ajax({
+                type: "POST", // Can be GET or POST
+                url: "Default.aspx/GetDateOfBirth", // Call the function TestAction in DataController.cs
+                contentType: "application/json; charset=utf-8",
+                success: function (reponse) { // data that we get back from the server
+                    if (reponse.d != "Fail") {
+                        $("#personalInfoDateOfBirth").val(reponse.d);
+                    }
+                    else {
+
+                    }
+                },
+                error: function (response) { // in case of exception from server
+                },
+                complete: function (response) { // to be run after success and error (kinda like finally cause in a throw-catch-finally)
+                }
+            });
+
+            $.ajax({
+                type: "POST", // Can be GET or POST
+                url: "Default.aspx/GetAddress", // Call the function TestAction in DataController.cs
+                contentType: "application/json; charset=utf-8",
+                success: function (reponse) { // data that we get back from the server
+                    if (reponse.d != "Fail") {
+                        $("#personalInfoAddress").val(reponse.d);
+                    }
+                    else {
+
+                    }
+                },
+                error: function (response) { // in case of exception from server
+                },
+                complete: function (response) { // to be run after success and error (kinda like finally cause in a throw-catch-finally)
+                }
+            });
+
+            $.ajax({
+                type: "POST", // Can be GET or POST
+                url: "Default.aspx/GetAnswers", // Call the function TestAction in DataController.cs
+                contentType: "application/json; charset=utf-8",
+                success: function (reponse) { // data that we get back from the server
+                    if (reponse.d != "Fail") {
+                        var data = JSON.parse(reponse.d);
+                        $("#question1").val(data["answer1"]);
+                        $("#question2").val(data["answer2"]);
+                        $("#question3").val(data["answer3"]);
+                        $("#question4").val(data["answer4"]);
+                        $("#question5").val(data["answer5"]);
+                        $("#question6").val(data["answer6"]);
+                        $("#question7").val(data["answer7"]);
+                        $("#question8").val(data["answer8"]);
+                        $("#question9").val(data["answer9"]);
+                        $("#question10").val(data["answer10"]);
+                        $("#question11").val(data["answer11"]);
+                        $("#question11").val(data["answer12"]);
+                    }
+                    else {
+
+                    }
+                },
+                error: function (response) { // in case of exception from server
+                },
+                complete: function (response) { // to be run after success and error (kinda like finally cause in a throw-catch-finally)
+                }
+            });
 		
 		// show login
-
+        //dashboard clicks
 		$('li.dashboard-button-container').on('click',function(e){
 			e.preventDefault();
       
@@ -957,7 +1130,126 @@ You Worked as a Flight Attendant</h4>
                 
             
 
+    });
+
+    $('#personalInfoSubmitButton').on("click", function (e) {
+        var request = {
+            firstName: $('#personalInfoFirstName').val(),
+            middleName: $('#personalInfoMiddleName').val(),
+            lastName: $('#personalInfoLastName').val(),
+            airport: $('#personalInfoAirport').val(),
+            email: $('#personalInfoEmail').val(),
+            phone: $('#personalInfoPhone').val(),
+            dateOfBirth: $('#personalInfoDateOfBirth').val(),
+            address: $('#personalInfoAddress').val()
+        };
+
+        var strRequest = JSON.stringify(request);
+
+        $.ajax({
+            type: "POST", // Can be GET or POST
+            url: "Default.aspx/SubmitPersonalInfo", // Call the function TestAction in DataController.cs
+            data: strRequest,
+            contentType: "application/json; charset=utf-8",
+            success: function (reponse) { // data that we get back from the server
+                if (reponse.d != "fail") {
+                    if (!$('div#tax-documents-container').is(":visible")) {
+                        $('div.box-dashboard-container').hide();
+                        $('div#Personal-info').hide();
+                        $('div#tax-question').hide();
+                        $('div#make-payment').hide();
+                        $('div#tax-documents-container').fadeIn(500);
+                        $('div#work-schedule-container').hide();
+                        if ($(!'div#options .menu-dashboard').is(":visible")) {
+                            $('div.left-menu-collapse').slideUp(500);
+                        }
+                        $('div.btn-container').css('background', '#999');
+                        $('div.btn-container').eq(1).css('background', '#E74139');
+                    }
+                }
+                else {
+                    showError("An error occurred, please try again.");
+                }
+            },
+            error: function (response) { // in case of exception from server
+            },
+            complete: function (response) { // to be run after success and error (kinda like finally cause in a throw-catch-finally)
+            }
         });
+    });
+
+    $('#sendMessageSubmitButton').on("click", function (e) {
+        e.preventDefault();
+        var request = {
+            firstName: $('#messageFirstName').val(),
+            lastName: $('#messageLastName').val(),
+            email: $('#messageEmail').val(),
+            phone: $('#messagePhone').val(),
+            message: $('#messageMessage').val()
+        };
+
+        var strRequest = JSON.stringify(request);
+
+        $.ajax({
+            type: "POST", // Can be GET or POST
+            url: "AskAQuestion.ashx", // Call the function TestAction in DataController.cs
+            data: strRequest,
+            success: function (reponse) { // data that we get back from the server
+                if (reponse == "success") {
+                    alert("Question Submitted");
+                }
+                else if(reponse == "missing")
+                {
+                    alert("Please enter all the required information");
+                }
+                else {
+                    alert("An error occurred, please try again.");
+                }
+            },
+            error: function (response) { // in case of exception from server
+                alert("An error occurred, please try again.");
+            },
+            complete: function (response) { // to be run after success and error (kinda like finally cause in a throw-catch-finally)
+            }
+        });
+    });
+
+    $('#taxQuestionSubmitButton').on("click", function (e) {
+        e.preventDefault();
+        var request = new Array();
+        request[0] = $('#question1').val();
+        request[1] = $('#question2').val();
+        request[2] = $('#question3').val();
+        request[3] = $('#question4').val();
+        request[4] = $('#question5').val();
+        request[5] = $('#question6').val();
+        request[6] = $('#question7').val();
+        request[7] = $('#question8').val();
+        request[8] = $('#question9').val();
+        request[9] = $('#question10').val();
+        request[10] = $('#question11').val();
+        request[11] = $('#question12').val();
+        var strRequest = JSON.stringify({ answers: request });
+
+        $.ajax({
+            type: "POST", // Can be GET or POST
+            url: "Default.aspx/SubmitTaxQuestions", // Call the function TestAction in DataController.cs
+            data: strRequest,
+            contentType: 'application/json',
+            success: function (reponse) { // data that we get back from the server
+                if (reponse.d == "success") {
+                    alert("Answers submitted");
+                }
+                else {
+                    showError("An error occurred, please try again.");
+                }
+            },
+            error: function (response) { // in case of exception from server
+            },
+            complete: function (response) { // to be run after success and error (kinda like finally cause in a throw-catch-finally)
+            }
+        });
+    })
 
     $('#dashboard').on('click',function(e){
           e.preventDefault();
@@ -1090,7 +1382,7 @@ $(function(){
        });
    });
 
-
+//Files Uploading
 + function($) {
     'use strict';
 
@@ -1102,8 +1394,26 @@ $(function(){
     var uploadForm = document.getElementById('js-upload-form');
     var uploadFormWork = document.getElementById('js-upload-form-work');
 
-    var startUpload = function(files) {
-        console.log(files)
+    var startUpload = function (files) {
+        var formData = new FormData();
+        for (var i = 0; i < files.length; i++)
+        {
+            formData.append(files[i].name, files[i]);
+        }
+        $.ajax({
+            type: 'post',
+            url: 'fileUploader.ashx',
+            data: formData,
+            contentType: 'multipart/form-data',
+            success: function (status) {
+
+            },
+            processData: false,
+            contentType: false,
+            error: function () {
+                alert("Whoops something went wrong!");
+            }
+        });
     }
 
     uploadForm.addEventListener('submit', function(e) {
@@ -1126,12 +1436,15 @@ $(function(){
         this.className = 'upload-drop-zone';
         
         if(readURL(e.dataTransfer.files)){ // checking the file extension if correct
-
-          var htmldata = "<a href='#' class='list-group-item list-group-item-success'><span class='badge alert-success pull-right'>Success</span>"+ e.dataTransfer.files[0].name; +"</a>";
-          console.log(e.dataTransfer.files[0].name);
-          // call this after you have uploaded your file to server. 
-          $('div.list-group').append(htmldata);
+            for (var i = 0; i < e.dataTransfer.files.length; i++)
+            {
+                var htmldata = "<a href='#' class='list-group-item list-group-item-success'><span class='badge alert-success pull-right'>Success</span>" + e.dataTransfer.files[i].name; +"</a>";
+                $('div.list-group').append(htmldata);
+            }          
           startUpload(e.dataTransfer.files)
+        }
+        else {
+            alert('File type not supported. Please upload a .csv, .jpg, or .txt');
         }
     }
 
@@ -1151,12 +1464,17 @@ $(function(){
         this.className = 'upload-drop-zone-work';
         
         if(readURL(e.dataTransfer.files)){ // checking the file extension if correct
-
-          var htmldata = "<a href='#' class='list-group-item list-group-item-success'><span class='badge alert-success pull-right'>Success</span>"+ e.dataTransfer.files[0].name; +"</a>";
-          console.log(e.dataTransfer.files[0].name);
-          // call this after you have uploaded your file to server. 
-          $('div.list-group').append(htmldata);
+            for (var i = 0; i < e.dataTransfer.files.length; i++)
+            {
+                var htmldata = "<a href='#' class='list-group-item list-group-item-success'><span class='badge alert-success pull-right'>Success</span>" + e.dataTransfer.files[i].name; +"</a>";
+                $('div.list-group').append(htmldata);
+            }
+          
           startUpload(e.dataTransfer.files)
+        }
+        else
+        {
+            alert('File type not supported. Please upload a .csv, .jpg, or .txt');
         }
     }
 
